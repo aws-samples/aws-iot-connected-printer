@@ -11,7 +11,7 @@ aws cognito-idp admin-create-user \
     --user-pool-id <Get this from cdk outputs> \
     --username <An email address you have access to> \
     --password <Choose a complicated password (mix of upper, lower, alphanumeric and at least one symbol, min 8 characters)> \
-    --user-attributes Name="email",Value="you@yourdomain.com" Name="family_name",Value="Foobar" \
+    --user-attributes Name="email",Value="<An email address you have access to>" Name="family_name",Value="Foobar" \
     --region us-west-2 
 ```
 4. Next, you'll want to confirm your newly registered user in the Cognito Userpool. To do this, you'll also use the CLI (replace the user-pool-id with the output for connected-printer-cdk.cognitoappclientid):

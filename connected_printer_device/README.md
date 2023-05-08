@@ -91,7 +91,9 @@ python3 connect_mqtt.py \
         --device_name RASP_PI_ARMV7
 ```
 
-Next, head on over to [connected_printer_frontend/README.md](https://github.com/aws-samples/aws-iot-connected-printer/blob/main/connected_printer_frontend/README.md) for interacting with the resources we've built and provisioned using a React-based frontend application.
+Your IoT device is now regularly publishing device metrics to AWS IoT Core via MQTT, as well as listening for instructions to print on an MQTT topic.
+
+Next, head on over to [../connected_printer_frontend/README.md](https://github.com/aws-samples/aws-iot-connected-printer/blob/main/connected_printer_frontend/README.md) for interacting with the resources we've built and provisioned using a React-based frontend application.
 
 
 

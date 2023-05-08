@@ -21,13 +21,13 @@ Deploying this solution does not guarantee an organization’s compliance with a
 4. [Install the AWS CDK Tool](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html#getting_started_install)
 
 ### Back End Resources
-First, you'll deploy the backend resources using CDK. Detailed instructions can be found at [./connected_printer_cdk/README.md](https://github.com/aws-samples/aws-iot-connected-printer/blob/main/connected_printer_cdk/README.md)
+First, you'll deploy the backend resources using CDK. Detailed instructions can be found at [././nnected_printer_cdk/README.md](https://github.com/aws-samples/aws-iot-connected-printer/blob/main/connected_printer_cdk/README.md)
 
 ### Provision Your Device
-Then, you'll need to provision your IoT Device. Check out the instructions at [connected_printer_device/README.md](https://github.com/aws-samples/aws-iot-connected-printer/blob/main/connected_printer_device/README.md)
+Then, you'll need to provision your IoT Device. Check out the instructions at [./connected_printer_device/README.md](https://github.com/aws-samples/aws-iot-connected-printer/blob/main/connected_printer_device/README.md)
 
 ### Lastly, Interact with these Resources using a Web App
-Follow the instructions found at [connected_printer_frontend/README.md](https://github.com/aws-samples/aws-iot-connected-printer/blob/main/connected_printer_frontend/README.md)
+Follow the instructions found at [./connected_printer_frontend/README.md](https://github.com/aws-samples/aws-iot-connected-printer/blob/main/connected_printer_frontend/README.md)
 
 ## Costs and Licenses
 
