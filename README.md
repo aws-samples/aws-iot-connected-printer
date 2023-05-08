@@ -1,17 +1,38 @@
-## My Project
+# AWS Native Connected Printer
 
-TODO: Fill this README out!
 
-Be sure to:
+## About this Project
 
-* Change the title in this README
-* Edit your repository description on GitHub
+This solution deploys backend Amazon Web Services (AWS) resources to support a fully cloud-based and event-driven Connected Printer solution using AWS IoT Core and the [AWS Cloud Development Kit (AWS CDK) developed in Python](https://docs.aws.amazon.com/cdk/latest/guide/work-with-cdk-python.html). This solution will also deploy a front-end react application for interacting with the backend resources.
 
-## Security
+Deploying this solution does not guarantee an organization’s compliance with any laws, certifications, policies, or other regulations.
 
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+## What You'll Build
 
-## License
+![AWS Native Connected Printe](AWS Native Connected Printer.png)
 
-This library is licensed under the MIT-0 License. See the LICENSE file.
+## How to Deploy
 
+### Prerequisites
+
+1. [Install Python 3.8](https://www.python.org/downloads/release/python-380/)
+2. [Install Node and NPM](https://nodejs.org/en/download/)
+3. [Install the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+4. [Install the AWS CDK Tool](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html#getting_started_install)
+
+### Back End Resources
+First, you'll deploy the backend resources using CDK. Detailed instructions can be found at [./connected_printer_cdk/README.md](https://gitlab.aws.dev/marshbun/connected_printer_poc/-/blob/main/connected_printer_cdk/README.md)
+
+### Provision Your Device
+Then, you'll need to provision your IoT Device. Check out the instructions at [connected_printer_device/README.md](https://gitlab.aws.dev/marshbun/connected_printer_poc/-/blob/main/connected_printer_device/README.md)
+
+### Lastly, Interact with these Resources using a Web App
+Follow the instructions found at [connected_printer_frontend/README.md](https://gitlab.aws.dev/marshbun/connected_printer_poc/-/blob/main/connected_printer_frontend/README.md)
+
+## Costs and Licenses
+
+You are responsible for the cost of the AWS services used while running this solution. There is no additional cost for using the solution.
+
+This solution includes configuration parameters that you can customize. Some of these settings, such as instance type, affect the cost of deployment. For cost estimates, refer to the pricing pages for each AWS service you use. Prices are subject to change.
+
+There are no licensing costs for this solution.
