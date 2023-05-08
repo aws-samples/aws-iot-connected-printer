@@ -9,7 +9,7 @@ Deploying this solution does not guarantee an organization’s compliance with a
 
 ## What You'll Build
 
-![AWS Native Connected Printe](AWS Native Connected Printer.png)
+![AWS Native Connected Printer](https://github.com/aws-samples/aws-iot-connected-printer/blob/main/AWS%20Native%20Connected%20Printer.png)
 
 ## How to Deploy
 
@@ -21,13 +21,13 @@ Deploying this solution does not guarantee an organization’s compliance with a
 4. [Install the AWS CDK Tool](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html#getting_started_install)
 
 ### Back End Resources
-First, you'll deploy the backend resources using CDK. Detailed instructions can be found at [./connected_printer_cdk/README.md](https://gitlab.aws.dev/marshbun/connected_printer_poc/-/blob/main/connected_printer_cdk/README.md)
+First, you'll deploy the backend resources using CDK. Detailed instructions can be found at [./connected_printer_cdk/README.md](https://github.com/aws-samples/aws-iot-connected-printer/blob/main/connected_printer_cdk/README.md)
 
 ### Provision Your Device
-Then, you'll need to provision your IoT Device. Check out the instructions at [connected_printer_device/README.md](https://gitlab.aws.dev/marshbun/connected_printer_poc/-/blob/main/connected_printer_device/README.md)
+Then, you'll need to provision your IoT Device. Check out the instructions at [connected_printer_device/README.md](https://github.com/aws-samples/aws-iot-connected-printer/blob/main/connected_printer_device/README.md)
 
 ### Lastly, Interact with these Resources using a Web App
-Follow the instructions found at [connected_printer_frontend/README.md](https://gitlab.aws.dev/marshbun/connected_printer_poc/-/blob/main/connected_printer_frontend/README.md)
+Follow the instructions found at [connected_printer_frontend/README.md](https://github.com/aws-samples/aws-iot-connected-printer/blob/main/connected_printer_frontend/README.md)
 
 ## Costs and Licenses
 

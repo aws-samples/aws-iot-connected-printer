@@ -39,6 +39,6 @@ source .venv/bin/activate
 
 8. With that, all the backend resources our workload uses are created in AWS. 
 
-9. Next, we'll provision our IoT Device. Head on over to [connected_printer_device/README.md](https://gitlab.aws.dev/marshbun/connected_printer_poc/-/blob/main/connected_printer_device/README.md) for further instructions.
+9. Next, we'll provision our IoT Device. Head on over to [connected_printer_device/README.md](https://github.com/aws-samples/aws-iot-connected-printer/blob/main/connected_printer_device/README.md) for further instructions.
 
 
