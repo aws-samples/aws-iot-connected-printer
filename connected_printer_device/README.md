@@ -1,5 +1,7 @@
 # AWS Native Connected Printer - Connected Device
 
+In this section, we'll be setting up a Raspberry Pi to use as a print server. To do this, we will install some prerequisite packages on the device, including Python3.8, the AWS CLI, and the AWS IoT SDK for Python. The AWS IoT SDK for Python is what we will use, specifically, to provision the device as an IoT Thing, and use to connect to MQTT topics to emit device metrics back to the AWS Cloud for tracking device availability. Additionally, we are using the AWS IoT SDK for Python to subscribe to MQTT topics to receive print jobs when they are created by the front end application.
+
 ## Prerequisites
 
 1. For this workshop, you'll need the ability to ssh onto your connected device.
@@ -56,7 +58,7 @@ python provision.py \
 
 ## Getting the Printer to Print
 
-My home printer is an HP LaserJet Pro MFP M428fdw. These commands should work for any HP network-connected printer.
+My home printer is an HP LaserJet Pro MFP M428fdw. These commands should work for any HP network-connected printer. 
 
 ### Install these packages
 ```

@@ -23,5 +23,3 @@ aws cognito-idp admin-confirm-sign-up \
 ```
 5. Now that you've registered, we need to connect our front end application to the user pool so you can successfully log in. To do this, navigate to `src/index.js`, and change the userPoolId so that it matches the output for `connected-printer-cdk.cognitouserpoolclientid`, and the UserPoolWebClientId so that it matches the output for `connected-printer-cdk.cognitoappclientid`.
 6. Next, run ```npm start``` to start the development server. Your browser should automatically open to `localhost:3000`, but you'll want to go to `localhost:3000/print` to view the actual app.
-
-

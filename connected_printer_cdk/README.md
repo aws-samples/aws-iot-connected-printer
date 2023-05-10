@@ -1,5 +1,6 @@
 # AWS Native Connected Printer - CDK
 
+In this section we will deploy the supporting AWS resources.
 
 Get Started:
 1. First, cd into the source directory for our CDK project with: ```cd connected_printer_cdk```

@@ -3,7 +3,7 @@
 
 ## About this Project
 
-This solution deploys backend Amazon Web Services (AWS) resources to support a fully cloud-based and event-driven Connected Printer solution using AWS IoT Core and the [AWS Cloud Development Kit (AWS CDK) developed in Python](https://docs.aws.amazon.com/cdk/latest/guide/work-with-cdk-python.html). This solution will also deploy a front-end react application for interacting with the backend resources.
+This solution deploys backend Amazon Web Services (AWS) resources to support a fully cloud-based and event-driven Connected Printer solution using AWS IoT Core and the [AWS Cloud Development Kit (AWS CDK) developed in Python](https://docs.aws.amazon.com/cdk/latest/guide/work-with-cdk-python.html). In addition to back end resources, we will set up a Raspberry Pi with the required dependencies, provision the device as an IoT Thing, and run a script which initiates your device's connection to AWS IoT Core MQTT topics (used for publishing device metrics and receiving print job commands). Lastly, this solution provides a pre-built front-end React application for interacting with the backend resources and your provisioned IoT Device -- allowing you to view provisioned IoT devices, view the availability of your provisioned IoT devices, and create print jobs for indicated IoT devices.
 
 Deploying this solution does not guarantee an organization’s compliance with any laws, certifications, policies, or other regulations.
 
