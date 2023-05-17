@@ -182,7 +182,7 @@ class ConnectedPrinterCdkStack(Stack):
         # stores in s3, creates print job record in ddb
         write_print_job = _lambda.Function(
             self, 'write_print_job',
-            runtime=_lambda.Runtime.PYTHON_3_9,
+            runtime=_lambda.Runtime.PYTHON_3_8,
             code=_lambda.Code.from_asset('lambda_write_print_job'),
             handler='write_print_job.lambda_handler',
             role=lambda_exec_role,
@@ -544,13 +544,10 @@ class ConnectedPrinterCdkStack(Stack):
 
         lambda_exec_role.add_to_policy(_iam.PolicyStatement(
             resources=[
-                print_job_bucket.bucket_arn,
-                f'${print_job_bucket.bucket_arn}/*'
+                '*'
             ],
             actions=[
-                's3:PutObject',
-                's3:GetObject',
-                's3:ListBucket'
+                's3:*'
             ]
         ))
 
@@ -667,6 +664,17 @@ class ConnectedPrinterCdkStack(Stack):
             apply_to_children=True
         )
 
+        _NagSuppressions.add_resource_suppressions(
+            write_print_job,
+            suppressions=[
+                {
+                    "id": "AwsSolutions-L1",
+                    "reason": "Lambda runtime remains at 3.8 to enable pillow version"
+                }
+            ],
+            apply_to_children=True
+        )
+
         _NagSuppressions.add_resource_suppressions_by_path(
             self,
             '/connected-printer-cdk/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource', 
@@ -720,6 +728,8 @@ class ConnectedPrinterCdkStack(Stack):
             ],
             apply_to_children=True
         )
+
+
         
 
         Aspects.of(self).add(cdk_nag.AwsSolutionsChecks(verbose=True))
